@@ -45,15 +45,15 @@ const About = () => {
         <title>Alwin | About</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Drive Ignites Ambition!"
             className="mb-16 font-mont"
           />
           <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-3xl font-extrabold uppercase text-dark/75 font-mono relative group">
+            <div className="col-span-3 flex flex-col items-start justify-start ">
+              <h2 className="mb-4 text-3xl font-extrabold uppercase text-dark/75 font-mono relative group dark:text-white/75">
                 Biography.
                 <span className="block h-1 bg-dark/75 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-300"></span>
               </h2>
@@ -96,8 +96,8 @@ const About = () => {
                 skills and passion to your next project.
               </motion.p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 ">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark  " />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-black">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light/50 " />
               <Image
                 src={profilePic}
                 alt="Alwin"
@@ -109,7 +109,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group">
+                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group dark:text-light/75">
                   Satisfied Clients
                   <span className="block h-1 bg-dark/75 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-300"></span>
                 </h2>
@@ -118,7 +118,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={40} />+
                 </span>
-                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group">
+                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group dark:text-light/75">
                   Projects Completed
                   <span className="block h-1 bg-dark/75 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-300"></span>
                 </h2>
@@ -127,7 +127,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={1} />+
                 </span>
-                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group">
+                <h2 className="text-lg font-bold  uppercase text-dark/75 relative group dark:text-light/75">
                   Years of Experience
                   <span className="block h-1 bg-dark/75 absolute left-0 bottom-0 w-0 group-hover:w-full transition-all duration-300"></span>
                 </h2>

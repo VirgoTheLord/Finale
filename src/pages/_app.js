@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import "@/styles/globals.css";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import "../styles/globals.css";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return (
     <main
-      className={`${montserrat.variable} font-mont antialiased bg-light w-full min-h-screen`}
+      className={`${montserrat.variable} font-mont antialiased bg-light dark:bg-dark w-full min-h-screen`}
     >
       <NavBar />
       <Component {...pageProps} />
